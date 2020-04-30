@@ -1,0 +1,10 @@
+---On search NO Result, change to portuguese---
+
+('.chosen-select').chosen({no_results_text: "Sem resultados"});
+
+
+---when open select and don´t has elements---
+
+$('.chosen-default').each(function(){
+  $(this).children('span').html('Selecione uma opção');
+});
