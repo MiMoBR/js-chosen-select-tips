@@ -8,3 +8,8 @@
 $('.chosen-default').each(function(){
   $(this).children('span').html('Selecione uma opção');
 });
+
+
+---define specific value from select---
+$('#brand').val('<%=brands.get(0).getId()%>').trigger('chosen:updated');
+                $('#brand').change();----create a function when change option
